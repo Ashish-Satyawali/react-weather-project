@@ -3,9 +3,10 @@ import Button from '@mui/material/Button';
 import './Weather.css'
 import { useState } from 'react';
 import Infobox from './info';
+const weatherApiKey = import.meta.env.VITE_WEATHER_API_KEY;
 
 export default function Searchinfo ({updateinfo}){
-    const weatherApiKey = import.meta.env.VITE_WEATHER_API_KEY;
+    
     let [city,setcity] = useState("");
     let [error,seterror] = useState(false);
     const API_URL = "https://api.openweathermap.org/data/2.5/weather"

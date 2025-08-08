@@ -5,10 +5,11 @@ import { useState } from 'react';
 import Infobox from './info';
 
 export default function Searchinfo ({updateinfo}){
+    const weatherApiKey = import.meta.env.VITE_WEATHER_API_KEY;
     let [city,setcity] = useState("");
     let [error,seterror] = useState(false);
     const API_URL = "https://api.openweathermap.org/data/2.5/weather"
-    const API_KEY = "e7db9a487f7b26ffd3b5e08729f5d3fd"
+    const API_KEY = weatherApiKey
     
     let handleCity = (evt)=>{
         setcity(evt.target.value);

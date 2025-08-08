@@ -1,0 +1,23 @@
+.wether{
+    text-align: center;
+    
+}
+
+.infobox{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.fullcard{
+    width: 400px;
+    height: 450px;
+    border-radius: 5px !important;
+    text-align: center;
+}
+.content{
+    font-size: 18px !important;
+}
+.content div{
+    margin-bottom: 4px;
+}
